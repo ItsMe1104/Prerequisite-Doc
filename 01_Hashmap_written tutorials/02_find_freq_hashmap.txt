@@ -1,0 +1,14 @@
+int findFrequency(vector<int> v, int x){
+    unordered_map<int,int> mp;
+    
+    for(int i = 0; i < v.size(); i++)
+    {
+        mp[v[i]]++;
+    }
+    
+    return mp[x];
+}
+
+
+T.C :- O(N + Q)
+S.C :- O(N)
